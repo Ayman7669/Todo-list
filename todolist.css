@@ -1,0 +1,181 @@
+/* General reset */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main container */
+.todo-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  width: 380px;
+  text-align: center;
+}
+
+.todo-container h1 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Input section layout */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Inputs and selects */
+#custom-task,
+#task-input,
+#category-select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+#custom-task:focus,
+#task-input:focus,
+#category-select:focus {
+  border-color: #28a745;
+}
+
+/* Add button */
+#add-btn {
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#add-btn:hover {
+  background: #218838;
+}
+
+/* Task list */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#task-list li {
+  background: #f1f3f6;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+#task-list li:hover {
+  background: #e8ebef;
+}
+
+#task-list li.completed .task-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Task text */
+.task-text {
+  flex: 1;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Category label with different colors */
+.category-label {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.category-label.General { background: #007bff; }
+.category-label.Work { background: #17a2b8; }
+.category-label.Study { background: #ffc107; color: #333; }
+.category-label.Personal { background: #6f42c1; }
+
+/* Buttons for edit and delete */
+.edit-btn,
+.delete-btn {
+  margin-left: 6px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b02a37;
+}
+#task-list li {
+  background: #f1f3f6;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between text and category */
+}
+
+.task-text {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.category-label {
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Category colors */
+.category-label.General { background: #007bff; }
+.category-label.Work { background: #17a2b8; }
+.category-label.Study { background: #ffc107; color: #333; }
+.category-label.Personal { background: #6f42c1; }
