@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>My To-Do List</h1>
+
+   <div class="input-section">
+  <!-- New text input -->
+  <input type="text" id="custom-task" placeholder="Enter custom task...">
+
+  <!-- Task selection dropdown -->
+  <select id="task-input">
+    <option value="">-- Or select a task --</option>
+    <option value="Finish homework">Finish homework</option>
+    <option value="Go to gym">Go to gym</option>
+    <option value="Buy groceries">Buy groceries</option>
+    <option value="Read a book">Read a book</option>
+    <option value="Complete project">Complete project</option>
+  </select>
+
+  <!-- Category dropdown -->
+  <select id="category-select">
+    <option value="General">General</option>
+    <option value="Work">Work</option>
+    <option value="Study">Study</option>
+    <option value="Personal">Personal</option>
+  </select>
+
+  <!-- Add button -->
+  <button id="add-btn">Add</button>
+</div>
+
+    <!-- Task list -->
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
